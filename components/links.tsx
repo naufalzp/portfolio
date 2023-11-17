@@ -31,7 +31,7 @@ const linkVariants = {
   },
 };
 
-const Links = ({ setOpen }: LinksProps) => {
+const Links: React.FC<LinksProps> = ({ setOpen }) => {
   const pathname = usePathname();
   return (
     <motion.div

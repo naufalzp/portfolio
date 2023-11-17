@@ -1,8 +1,8 @@
 import Navbar from '@/components/navbar';
 import Section from '@/components/section';
 import Hero from '@/components/hero';
-import Parallax from '@/components/parallax';
 import Projects from '@/components/projects';
+import About from '@/components/about';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Hero />
       </Section>
       <Section id='about'>
-        <Parallax />
+        <About />
       </Section>
       <Projects />
       <Section id='contact'>

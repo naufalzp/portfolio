@@ -22,7 +22,7 @@ const variants = {
     },
   },
 };
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 

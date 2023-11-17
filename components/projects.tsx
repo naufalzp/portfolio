@@ -3,33 +3,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Section from './section';
 import Image from 'next/image';
-
-const items = [
-  {
-    id: 1,
-    title: 'Next.js CMS',
-    img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-  },
-  {
-    id: 2,
-    title: 'Prompt Wave',
-    img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-  },
-  {
-    id: 3,
-    title: 'Gethebook',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-  },
-  {
-    id: 4,
-    title: 'Netflix Clone',
-    img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-  },
-];
+import { items } from '@/constant/constants';
 
 type SingleProps = {
   item: (typeof items)[0];
@@ -50,7 +24,7 @@ const Single: React.FC<SingleProps> = ({ item }) => {
         <div className=' m-auto flex h-full max-w-xs items-center justify-center gap-12 sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'>
           <div className='h-1/2 flex-1' ref={ref}>
             <Image
-              className='h-full w-full object-cover'
+              className='h-full w-full object-contain'
               width={0}
               height={0}
               sizes='100vw'
@@ -71,7 +45,7 @@ const Single: React.FC<SingleProps> = ({ item }) => {
   );
 };
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -85,13 +59,20 @@ const Projects = () => {
   });
 
   return (
-    <div className='relative' ref={ref}>
-      <div className='sticky left-0 top-0 pt-[50px] text-center text-4xl font-semibold'>
-        <h1>Projects</h1>
-        <motion.div
-          style={{ scaleX }}
-          className='mt-3 h-1 bg-neutral-900 dark:bg-white'
-        ></motion.div>
+    <div
+      id='projects'
+      className='relative mx-auto max-w-xs sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'
+      ref={ref}
+    >
+      <div className='sticky left-0 top-0 z-10  pt-[50px] text-center text-4xl font-semibold'>
+        <motion.h1
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: 'tween', duration: 1, delay: 0.5 }}
+          className=' h-full rounded-md border border-gray-100 border-opacity-10 bg-gray-500 bg-opacity-10 py-5 backdrop-blur-sm backdrop-filter'
+        >
+          Projects
+        </motion.h1>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />

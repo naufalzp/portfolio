@@ -1,10 +1,10 @@
-type Props = {
+type SectionProps = {
   children: React.ReactNode;
   className?: string;
   id?: string;
 };
 
-const Section = ({ children, className, id }: Props) => {
+const Section: React.FC<SectionProps> = ({ children, className, id }) => {
   return (
     <section
       id={`${id}`}

@@ -2,8 +2,7 @@
 import { motion } from 'framer-motion';
 import { description } from '@/constant/constants';
 import { TypeAnimation } from 'react-type-animation';
-
-type Props = {};
+import { useRouter } from 'next/navigation';
 
 const containerVariants = {
   initial: {
@@ -39,7 +38,8 @@ const itemVariants = {
   },
 };
 
-const Title = (props: Props) => {
+const Title = () => {
+  const router = useRouter();
   return (
     <motion.div
       initial='initial'
@@ -76,6 +76,7 @@ const Title = (props: Props) => {
         {description.description}
       </motion.p>
       <motion.img
+        className='cursor-pointer'
         width={60}
         height={60}
         variants={itemVariants}
@@ -83,6 +84,9 @@ const Title = (props: Props) => {
         animate='scrollButton'
         src='/images/scroll.png'
         alt=''
+        onClick={() => {
+          router.push('#about');
+        }}
       />
     </motion.div>
   );

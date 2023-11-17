@@ -1,8 +1,6 @@
 import Title from './title';
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero: React.FC = () => {
   return (
     <div className='h-[calc(100vh-100px)] overflow-hidden'>
       <div className='mx-auto h-full max-w-xs sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'>

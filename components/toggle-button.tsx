@@ -5,10 +5,7 @@ type ToggleButtonProps = {
   loading: boolean;
 };
 
-const ToggleButton = ({ setOpen, loading }: ToggleButtonProps) => {
-  // ${
-  //     loading ? "" : "hidden"
-  // }
+const ToggleButton: React.FC<ToggleButtonProps> = ({ setOpen, loading }) => {
   return (
     <button
       className='fixed left-[38px] top-[27px] z-50 h-[50px] w-[50px] cursor-pointer border-none bg-transparent'
