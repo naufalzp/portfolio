@@ -29,6 +29,7 @@ const Contact = () => {
           <input
             type='email'
             id='email'
+            disabled
             className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
             placeholder='name@mail.com'
             value={email}
@@ -46,6 +47,7 @@ const Contact = () => {
           <input
             type='text'
             id='subject'
+            disabled
             className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
             placeholder='Subject'
             value={subject}
@@ -63,6 +65,7 @@ const Contact = () => {
           <textarea
             id='message'
             rows={6}
+            disabled
             className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
             placeholder='Leave a comment...'
             defaultValue={''}
@@ -73,6 +76,7 @@ const Contact = () => {
         </div>
         <button
           type='submit'
+          disabled
           className='rounded-lg border-none bg-neutral-800 px-5 py-3 text-center text-sm font-medium text-white hover:bg-neutral-900 focus:outline-none focus:ring-4 focus:ring-neutral-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:ring-neutral-800 sm:w-fit'
         >
           Send message
