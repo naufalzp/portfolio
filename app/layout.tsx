@@ -8,22 +8,14 @@ export const metadata = {
   title: 'Naufal Zhafif - Portfolio',
   description:
     'Portfolio website of Naufal Zhafif, a full stack developer specializing in building web applications with React, Next.js and Node.js. Located in Indonesia.',
-  canonical: 'https://www.naufalzhafif.com',
+  canonical: 'https://naufalzp.me',
   openGraph: {
     type: 'website',
-    locale: 'en_IE',
-    url: 'https://www.naufalzhafif.com',
+    locale: 'en_US',
+    url: 'https://naufalzp.me',
     title: 'Naufal Zhafif - Portfolio',
     description:
       'Portfolio website of Naufal Zhafif, a full stack developer specializing in building web applications with React, Next.js and Node.js. Located in Indonesia.',
-    images: [
-      {
-        url: 'https://www.naufalzhafif.com/og-image.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Naufal Zhafif',
-      },
-    ],
   },
 };
 
