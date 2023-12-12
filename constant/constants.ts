@@ -45,24 +45,32 @@ export const items = [
     title: 'Next.js CMS',
     img: 'https://github.com/naufalzp/ecommerce-admin-next13/assets/98691805/5c3b7cde-8b8f-4de5-832f-79c4a3850eef',
     desc: 'Build a powerful Next.js CMS for efficient content management. Seamlessly integrate and manage your website content with ease.',
+    demo: 'https://ecommerce-admin-next13-seven.vercel.app/',
+    repository: 'https://github.com/naufalzp/ecommerce-admin-next13',
   },
   {
     id: 2,
     title: 'PromptWave',
     img: 'https://github.com/naufalzp/prompt-wave/assets/98691805/a3e53664-fe73-4e08-87f7-a42c1a1fd6bd',
     desc: 'Experience the immersive world of PromptWave. An innovative platform that delivers prompt-based storytelling, engaging users in captivating narratives.',
+    demo: 'https://prompt-wave-zeta.vercel.app/',
+    repository: 'https://github.com/naufalzp/prompt-wave',
   },
   {
     id: 3,
     title: 'Gethebook',
     img: 'https://github.com/naufalzp/portfolio/assets/98691805/21287ab2-c023-4574-adfc-e0226a6272ef',
     desc: 'Gethebook offers a seamless experience for book enthusiasts. Discover, read, and share your favorite books with an intuitive and user-friendly interface.',
+    demo: '',
+    repository: 'https://github.com/naufalzp/gethebook-review-books',
   },
   {
     id: 4,
     title: 'Netflix Clone',
     img: 'https://github.com/naufalzp/nfilm-netflix-clone/assets/98691805/0ca9ca20-0aa8-4fa2-9167-28a513897023',
     desc: 'Create a stunning Netflix clone with Nfilm. Showcase your favorite movies and TV shows with a sleek design and user-friendly interface.',
+    demo: 'https://nflim-netflix-clone.web.app/',
+    repository: 'https://github.com/naufalzp/nfilm-netflix-clone',
   },
 ];
 

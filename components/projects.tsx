@@ -4,6 +4,8 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Section from './section';
 import Image from 'next/image';
 import { items } from '@/constant/constants';
+import { Github } from './icons/icons';
+import Link from 'next/link';
 
 type SingleProps = {
   item: (typeof items)[0];
@@ -35,9 +37,24 @@ const Single: React.FC<SingleProps> = ({ item }) => {
           <motion.div className='flex flex-1 flex-col gap-8' style={{ y }}>
             <h2 className='text-7xl'>{item.title}</h2>
             <p className='text-xl text-gray-500'>{item.desc}</p>
-            <button className='w-[200px] rounded-md border-none bg-neutral-800 p-2'>
-              See Demo
-            </button>
+            <div className='flex gap-2'>
+              <Link
+                href={item.repository}
+                target='_blank'
+                className=' rounded-md border-none bg-neutral-800 p-2'
+              >
+                <Github />
+              </Link>
+              {item.demo && (
+                <Link
+                  href={item.demo}
+                  target='_blank'
+                  className='w-[100px] rounded-md border-none bg-neutral-800 p-2 text-center'
+                >
+                  See Demo
+                </Link>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>
