@@ -44,25 +44,25 @@ export const items = [
     id: 1,
     title: 'Next.js CMS',
     img: 'https://github.com/naufalzp/ecommerce-admin-next13/assets/98691805/5c3b7cde-8b8f-4de5-832f-79c4a3850eef',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    desc: 'Build a powerful Next.js CMS for efficient content management. Seamlessly integrate and manage your website content with ease.',
   },
   {
     id: 2,
     title: 'PromptWave',
     img: 'https://github.com/naufalzp/prompt-wave/assets/98691805/a3e53664-fe73-4e08-87f7-a42c1a1fd6bd',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    desc: 'Experience the immersive world of PromptWave. An innovative platform that delivers prompt-based storytelling, engaging users in captivating narratives.',
   },
   {
     id: 3,
     title: 'Gethebook',
-    img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    img: 'https://github.com/naufalzp/portfolio/assets/98691805/21287ab2-c023-4574-adfc-e0226a6272ef',
+    desc: 'Gethebook offers a seamless experience for book enthusiasts. Discover, read, and share your favorite books with an intuitive and user-friendly interface.',
   },
   {
     id: 4,
     title: 'Netflix Clone',
     img: 'https://github.com/naufalzp/nfilm-netflix-clone/assets/98691805/0ca9ca20-0aa8-4fa2-9167-28a513897023',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    desc: 'Create a stunning Netflix clone with Nfilm. Showcase your favorite movies and TV shows with a sleek design and user-friendly interface.',
   },
 ];
 

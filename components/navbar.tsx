@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Sidebar from './sidebar';
 import { Github, LinkedIn } from './icons/icons';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div className='h-[100px]'>
       {/* Sidebar */}

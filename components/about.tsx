@@ -13,7 +13,6 @@ const About: React.FC = () => {
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], ['100%', '0%', '100%']);
 
   return (
     <div
@@ -21,7 +20,7 @@ const About: React.FC = () => {
       className='mx-auto h-full max-w-xs sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'
     >
       <motion.div
-        style={{ opacity, y }}
+        style={{ opacity }}
         transition={{ type: 'tween', duration: 0.5 }}
         className='flex h-full flex-col items-center justify-center'
       >
