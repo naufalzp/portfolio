@@ -11,7 +11,8 @@ const Contact = () => {
   return (
     <div className='mx-auto max-w-screen-md px-4 py-8 lg:py-16'>
       <h2 className='mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white'>
-        Contact Me
+        Contact Me{' '}
+        <span className='font-bold text-red-600'>NOT WORKING YET</span>
       </h2>
       <p className='mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16'>
         Interested in connecting? Need web solutions for your business? Let

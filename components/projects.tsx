@@ -23,8 +23,8 @@ const Single: React.FC<SingleProps> = ({ item }) => {
   return (
     <Section>
       <div className='flex h-full w-full items-center justify-center overflow-hidden '>
-        <div className=' m-auto flex h-full max-w-xs items-center justify-center gap-12 sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'>
-          <div className='h-1/2 flex-1' ref={ref}>
+        <div className='flex h-full max-w-xs flex-col items-center justify-center gap-0 space-y-96 sm:max-w-xl lg:max-w-3xl lg:flex-row lg:gap-8 lg:space-y-0 xl:max-w-6xl'>
+          <div className='h-1/2 flex-1 lg:mt-0' ref={ref}>
             <Image
               className='h-full w-full object-contain'
               width={0}
@@ -34,14 +34,17 @@ const Single: React.FC<SingleProps> = ({ item }) => {
               alt=''
             />
           </div>
-          <motion.div className='flex flex-1 flex-col gap-8' style={{ y }}>
-            <h2 className='text-7xl'>{item.title}</h2>
-            <p className='text-xl text-gray-500'>{item.desc}</p>
+          <motion.div
+            className='flex flex-1 flex-col gap-0 lg:mt-0 lg:gap-8'
+            style={{ y }}
+          >
+            <h2 className='text-4xl lg:text-7xl'>{item.title}</h2>
+            <p className='text-base text-gray-500 lg:text-xl'>{item.desc}</p>
             <div className='flex gap-2'>
               <Link
                 href={item.repository}
                 target='_blank'
-                className=' rounded-md border-none bg-neutral-800 p-2'
+                className='rounded-md border-none bg-neutral-800 p-2 transition-colors ease-in-out hover:bg-neutral-700'
               >
                 <Github />
               </Link>
@@ -49,7 +52,7 @@ const Single: React.FC<SingleProps> = ({ item }) => {
                 <Link
                   href={item.demo}
                   target='_blank'
-                  className='w-[100px] rounded-md border-none bg-neutral-800 p-2 text-center'
+                  className='w-[100px] rounded-md border-none bg-neutral-800 p-2 text-center transition-colors ease-in-out hover:bg-neutral-700'
                 >
                   See Demo
                 </Link>

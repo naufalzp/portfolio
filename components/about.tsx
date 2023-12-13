@@ -17,7 +17,7 @@ const About: React.FC = () => {
   return (
     <div
       ref={ref}
-      className='mx-auto h-full max-w-xs sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'
+      className='max-w-s mx-3 h-full sm:mx-auto sm:max-w-xl lg:max-w-3xl xl:max-w-6xl'
     >
       <motion.div
         style={{ opacity }}
@@ -37,7 +37,7 @@ const About: React.FC = () => {
             borderColor: `rgba(243,244,246,0.1)`,
           }}
           style={atomOneDark}
-          className='mt-5 w-full rounded-md'
+          className='mt-5 w-full rounded-md text-xs lg:text-base'
         >
           {codeString}
         </SyntaxHighlighter>

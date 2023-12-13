@@ -78,15 +78,8 @@ export const codeString = `const me = {
   name: "Naufal Zhafif Pradipta",
   title: "Full Stack Web Developer",
   interests: ["Next.js", "Laravel"],
-  mood: isFeelingAwesome() ? "coding non-stop! 🚀" : "still coding. 😎",
   passion: "Turning tech dreams into reality 💡",
   secretFormula: ["Creativity + Hard work = Awesome Apps!"],
   futurePlans: ["Level up 🌟", "Build amazing things 🚀"],
   sayHi: () => shout("Let's connect! 🚀"),
-};
-
-const isFeelingAwesome = () => true; // Assume always awesome!
-
-const shout = (message: string) => {
-  console.log(\`\${message}\`);
-}`;
+};`;

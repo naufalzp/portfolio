@@ -47,7 +47,10 @@ const Title = () => {
       variants={containerVariants}
       className='sm:w-1/2'
     >
-      <motion.h1 variants={itemVariants} className='text-6xl font-bold'>
+      <motion.h1
+        variants={itemVariants}
+        className='text-center text-4xl font-bold sm:text-left sm:text-6xl'
+      >
         <TypeAnimation
           sequence={[
             'Hi!',
@@ -69,14 +72,20 @@ const Title = () => {
           repeat={Infinity}
         />
       </motion.h1>
-      <motion.h2 variants={itemVariants} className='text-2xl font-bold'>
+      <motion.h2
+        variants={itemVariants}
+        className='text-center text-xl font-bold sm:text-left sm:text-2xl'
+      >
         {"I'm " + description.name}
       </motion.h2>
-      <motion.p variants={itemVariants} className='text-xl'>
+      <motion.p
+        variants={itemVariants}
+        className='text-center text-base sm:text-left sm:text-xl'
+      >
         {description.description}
       </motion.p>
       <motion.img
-        className='cursor-pointer'
+        className='mx-auto cursor-pointer sm:mx-0'
         width={60}
         height={60}
         variants={itemVariants}
